@@ -143,7 +143,7 @@ struct SourceLocation {
   // See the comments in SourceCodeInfo.Location (descriptor.proto) for details.
   string leading_comments;
   string trailing_comments;
-  vector<string> leading_detached_comments;
+  std::vector<string> leading_detached_comments;
 };
 
 // Options when generating machine-parsable output from a descriptor with
